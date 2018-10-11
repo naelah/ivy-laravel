@@ -11,7 +11,6 @@
 
     @include('includes.admin_top_nav')
     @yield('search_form')
-
     <!-- Page content -->
     <div class="container-fluid mt--7">
       hello hello
@@ -20,7 +19,6 @@
  
   @include('includes.footer')
   </div>
-
 </div>
   @include('includes.admin_scripts')
  
