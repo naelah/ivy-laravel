@@ -89,37 +89,37 @@
       <!-- Navigation -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="./index.html">
+          <a class="nav-link" href="./">
             <i class="ni ni-chart-pie-35 text-info"></i> Dashboard
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./salons.html">
+          <a class="nav-link" href="./salon">
             <i class="ni ni-scissors text-warning"></i> Salon
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./staffs.html">
+          <a class="nav-link" href="./staff">
             <i class="ni ni-single-02 text-yellow"></i> Staff
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./reservations.html">
+          <a class="nav-link" href="./reservation">
             <i class="ni ni-calendar-grid-58 text-danger"></i> Reservation
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./users.html">
+          <a class="nav-link" href="./user">
             <i class="ni ni-circle-08 text-pink"></i> User
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./messages.html">
+          <a class="nav-link" href="./message">
             <i class="ni ni-email-83 text-primary"></i> Message
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./invoices.html">
+          <a class="nav-link" href="./invoice">
             <i class="ni ni-single-copy-04 text-default"></i> Invoice
           </a>
         </li>
