@@ -5,7 +5,7 @@
         <h3 class="mb-0">Menu List</h3>
       </div>
     <div class="col-4 text-right">
-      <a href="#!" class="btn btn-sm btn-warning">New Menu</a>
+      <a href="#!" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#menuNew">New Menu</a>
     </div>
   </div>
   </div>
@@ -15,7 +15,7 @@
         <thead class="thead-light">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Menu Item</th>
+            <th scope="col">Menu Title</th>
             <th scope="col">Price (MMK)</th>
             <th scope="col">Period</th>
             <th scope="col">Status</th>
@@ -40,6 +40,7 @@
               <td>
                 1 hour
               </td>
+              <td><span class=" badge badge-success">active</span></td>
               <td class="text-right">
                 <div class="dropdown">
                   <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,6 +71,7 @@
                 <td>
                   2 hours
                 </td>
+                <td><span class=" badge badge-danger">inactive</span></td>
                 <td class="text-right">
                   <div class="dropdown">
                     <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -101,6 +103,7 @@
                   <td>
                     1 hour
                   </td>
+                  <td><span class=" badge badge-success">active</span></td>
                   <td class="text-right">
                     <div class="dropdown">
                       <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -131,6 +134,7 @@
                     <td>
                       2 hours
                     </td>
+                    <td><span class=" badge badge-success">active</span></td>
                     <td class="text-right">
                       <div class="dropdown">
                         <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -161,6 +165,7 @@
                       <td>
                         2 hours
                       </td>
+                      <td><span class=" badge badge-success">active</span></td>
                       <td class="text-right">
                         <div class="dropdown">
                           <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -179,3 +184,5 @@
     </div>
   </div>
   <div class="row"><br><br></div>
+
+  @include('admin_pages.salons.menu_modal')

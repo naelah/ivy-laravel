@@ -26,7 +26,7 @@
   <div class="card-body">
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="tabFirst">  
-        @include('admin_pages.salons.settings')
+        @include('admin_pages.salons.salon')
       </div>
       <div class="tab-pane fade" id="tabSecond">
         @include('admin_pages.salons.menu')

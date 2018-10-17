@@ -2,8 +2,15 @@
 <div class="row">
   <div class="col-xl-12 order-xl-1">
     <form>
+    <div class="row align-items-center">
+    <div class="col-8">
       <h3 class="mb-0">My account</h3>
+    </div>
+        <div class="col-4 text-right">
+      <a href="#!" class="btn btn-sm btn-default"  data-toggle="modal" data-target="#salonNew">New Salon</a>
+    </div></div>
       <h6 class="heading-small text-muted mb-4">Store information</h6>
+
       <div class="row">
         <div class="col-lg-12">
           <div style="height: 200px ; transform: none;" class="card-profile-image">
@@ -13,6 +20,7 @@
           </div>
         </div>
       </div>
+      
       <div class="row">
         <div class="col-lg-8">
           <div class="form-group">
@@ -165,8 +173,12 @@
         </div>
       </div>
       <div class="float-right">
-        <button type="button" class="btn btn-outline-success">Preview Profile</button><button type="submit" class="btn btn-success">Save Changes</button>
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#salonProfile">Preview Profile</button>
+        <button type="submit" class="btn btn-success">Save Changes</button>
       </div>
     </form>
   </div>
 </div>
+
+
+@include('admin_pages.salons.salon_modal')

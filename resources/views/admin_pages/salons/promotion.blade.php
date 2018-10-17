@@ -5,7 +5,7 @@
         <h3 class="mb-0">Promotion List</h3>
       </div>
       <div class="col-4 text-right">
-        <a href="#!" class="btn btn-sm btn-info">New Promotion</a>
+        <a href="#!" class="btn btn-sm btn-info" data-toggle="modal" data-target="#promoNew">New Promotion</a>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
         <thead class="thead-light">
         <tr>
           <th scope="col">No</th>
-          <th scope="col">Promotion Item</th>
+          <th scope="col">Promotion Title</th>
           <th scope="col">Discount off</th>
           <th scope="col">Period</th>
           <th scope="col">Expiration date</th>
@@ -41,6 +41,8 @@
           <td>
             1 hour
           </td>
+          <td>31 Dec 2018</td>
+          <td><span class=" badge badge-success">active</span></td>
           <td class="text-right">
             <div class="dropdown">
               <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -71,6 +73,8 @@
               <td>
                 2 hour
               </td>
+              <td>31 Dec 2018</td>
+          <td><span class=" badge badge-success">active</span></td>
               <td class="text-right">
                 <div class="dropdown">
                   <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -101,6 +105,8 @@
                 <td>
                   1 hour
                 </td>
+                <td>31 Dec 2018</td>
+          <td><span class=" badge badge-success">active</span></td>
                 <td class="text-right">
                   <div class="dropdown">
                     <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -131,6 +137,8 @@
             <td>
               2 hours
             </td>
+            <td>31 Dec 2018</td>
+          <td><span class=" badge badge-success">active</span></td>
             <td class="text-right">
               <div class="dropdown">
                 <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -161,6 +169,8 @@
             <td>
               2 hours
             </td>
+            <td>31 Dec 2018</td>
+          <td><span class=" badge badge-success">active</span></td>
             <td class="text-right">
               <div class="dropdown">
                 <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -178,3 +188,5 @@
     </div>
   </div>
 </div>
+
+ @include('admin_pages.salons.promotion_modal')

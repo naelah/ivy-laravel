@@ -1,6 +1,3 @@
-
-
-
 <div class="card bg-secondary shadow">
   <div class="card-header bg-white border-0">
     <div class="row">
@@ -244,3 +241,5 @@
     </div>
   </div>
   <div class="row"><br><br></div>
+
+  @include('admin_pages.salons.reservation_modal')

@@ -5,7 +5,7 @@
         <h3 class="mb-0">Staff List</h3>
       </div>
     <div class="col-4 text-right">
-      <a href="#!" class="btn btn-sm btn-primary">New Staff</a>
+      <a href="#!" class="btn btn-sm btn-primary"  data-toggle="modal" data-target="#staffNew">New Staff</a>
     </div>
   </div>
   </div>
@@ -29,7 +29,7 @@
               1 
             </td>
             <td><div class="avatar-group">
-                  <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <a href="#" class="avatar avatar-sm" data-toggle="modal" data-target="#staffProfile">
                     <img alt="Image placeholder" src="/img/theme/team-3-800x800.jpg" class="rounded-circle">
                   </a>
                 </div> 
@@ -218,3 +218,5 @@
     </div>
   </div>
   <div class="row"><br><br></div>
+
+  @include('admin_pages.salons.staff_modal')
