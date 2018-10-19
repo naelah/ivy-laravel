@@ -5,5 +5,5 @@
 @stop
  
 @section('content')
-@include('admin_pages.salons.salon_nav')
+  @include('admin_pages.salons.salon_nav')
 @stop

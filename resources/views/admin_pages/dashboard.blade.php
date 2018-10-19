@@ -1,11 +1,11 @@
 @extends('layouts.admin_default')
 
 @section('search_form')
- la la la
+@include('admin_pages.dashboard.card_header')
 @stop
  
 @section('content')
  
-  i am the home page
+@include('admin_pages.dashboard.revenue_summary')
  
 @stop

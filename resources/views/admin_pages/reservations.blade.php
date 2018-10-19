@@ -1,11 +1,9 @@
 @extends('layouts.admin_default')
 
 @section('search_form')
- la la la
+  @include('admin_pages.reservations.reservation_search')
 @stop
  
 @section('content')
- 
-  i am the home page
- 
+  @include('admin_pages.reservations.reservation_table')
 @stop

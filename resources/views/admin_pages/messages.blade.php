@@ -1,11 +1,10 @@
 @extends('layouts.admin_default')
 
 @section('search_form')
- la la la
+  @include('admin_pages.messages.message_form')
 @stop
  
 @section('content')
- 
-  i am the home page
- 
+  @include('admin_pages.messages.new_message')
+  @include('admin_pages.messages.message_logs')
 @stop
