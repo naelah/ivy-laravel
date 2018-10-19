@@ -5,7 +5,7 @@
       <span class="navbar-toggler-icon"></span><i class="ni ni-bell-55"></i>
     </button>
     <!-- Brand -->
-    <a class="navbar-brand pt-0" href="/">
+    <a class="navbar-brand pt-0" href="./">
       <img src="/img/brand/ivy-logo-purple.png" class="navbar-brand-img" alt="...">
     </a>
     <!-- User -->
@@ -129,7 +129,7 @@
         <h6 class="navbar-heading text-muted">Configuration</h6>
         <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="./settings.html">
+          <a class="nav-link" href="./settings">
             <i class="ni ni-ui-04 text-primary"></i> Settings
           </a>
         </li>
