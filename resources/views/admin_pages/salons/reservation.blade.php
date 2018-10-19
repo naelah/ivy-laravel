@@ -138,7 +138,7 @@
                     <img alt="Image placeholder" src="/img/theme/team-3-800x800.jpg" class="rounded-circle">
                   </a> 
                 </div>staff name</td>
-                <td><span class=" badge badge-warning">Done</span></td>
+                <td><span class=" badge badge-success">Done</span></td>
                   <td class="text-right">
                     <div class="dropdown">
                       <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
