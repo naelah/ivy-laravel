@@ -165,7 +165,7 @@
         <div class="col-lg-12">
           <div class="form-group">
             <label>Store Description</label>
-            <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
+            <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful salon in Yangon.</textarea>
             <small id="telHelpBlock" class="form-text text-muted">
               This description will be displayed in Salon profile 
             </small>            
