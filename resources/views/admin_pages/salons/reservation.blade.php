@@ -5,7 +5,7 @@
         <h3 class="mb-0">Reservation List</h3>
       </div>
     <div class="col-4 text-right">
-      <a href="#!" class="btn btn-sm btn-danger">New Reservation</a>
+      <a href="#!" class="btn btn-sm btn-danger"  data-toggle="modal" data-target="#reservationNew">New Reservation</a>
     </div>
   </div>
   </div>
