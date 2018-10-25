@@ -17,16 +17,7 @@
     <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
       <div class="container-fluid">
         <div class="header-body">
-          <!-- Card stats -->
-          <div class="row">
-            <div class="col-xl-12 col-lg-12">
-              <div class="card card-stats mb-4 mb-xl-0">
-                <div class="card-body">
-                @yield('search_form')
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -42,7 +33,7 @@
             </div>
           </div>
         </div>
-        
+        </div>
      
       <!-- Footer -->
       @include('includes.footer')
@@ -50,6 +41,7 @@
   </div>
   <!-- Argon Scripts -->
   @include('includes.admin_scripts')
+  @yield('extra_scripts')
 
 </body>
 

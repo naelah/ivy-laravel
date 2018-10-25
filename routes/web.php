@@ -35,3 +35,12 @@ Route::get('admin/staff', function () {
 Route::get('admin/user', function () {
     return view('admin_pages.users');
 });
+
+Route::get('test', function () {
+    return view('test');
+});
+
+Route::get('admin/table', function () {
+    return view('admin_pages.table');
+});
+

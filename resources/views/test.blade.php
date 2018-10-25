@@ -1,9 +1,31 @@
-<div class="fresh-table full-screen-table">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>IVY Admin Dashboard</title>
+  <!-- Favicon -->
+  <link href="{{ asset('/img/brand/favicon.png') }}" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="{{ asset('/vendor/nucleo/css/nucleo.css') }}" rel="stylesheet">
+  <link href="{{ asset('/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+  <!-- Argon CSS -->
+  <link type="text/css" href=" {{ asset('/vendor/bootstrap-table/css/fresh-bootstrap-table.css') }}" rel="stylesheet" />
+  <!-- <link type="text/css" href=" {{ asset('/vendor/bootstrap-table/css/bootstrap.css') }}" rel="stylesheet" /> -->
+  <link type="text/css" href="{{ asset('/css/argon.css?v=1.0.0') }}" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="fresh-table full-screen-table">
     <!--    Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange                  
             Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange
     -->
         
         <div class="toolbar">
+            <button id="alertBtn" class="btn btn-default">Alert</button>
         </div>
         
         <table id="fresh-table" class="table">
@@ -819,3 +841,106 @@
             </tbody>
         </table>
     </div>
+    
+</div>
+
+
+</body>
+<script src="{{ asset('/vendor/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Optional JS -->
+  <script src="{{ asset('/vendor/chart.js/dist/Chart.min.js') }}"></script>
+  <script src="{{ asset('/vendor/chart.js/dist/Chart.extension.js') }}"></script>
+  <!-- Argon JS -->
+  <script src="{{ asset('/js/argon.js?v=1.0.0') }}"></script>
+  <script src="{{ asset('/vendor/bootstrap-table/js/jquery-1.11.2.min.js') }}"></script>
+  <script src="{{ asset('/vendor/bootstrap-table/js/bootstrap.js') }}"></script>
+  <script src="{{ asset('/vendor/bootstrap-table/js/bootstrap-table.js') }}"></script>
+        
+    <script type="text/javascript">
+        var $table = $('#fresh-table'),
+            $alertBtn = $('#alertBtn'), 
+            full_screen = false,
+            window_height;
+            
+        $().ready(function(){
+            
+            window_height = $(window).height();
+            table_height = window_height - 20;
+            
+            
+            $table.bootstrapTable({
+                toolbar: ".toolbar",
+
+                showRefresh: true,
+                search: true,
+                showToggle: true,
+                showColumns: true,
+                pagination: true,
+                striped: true,
+                sortable: true,
+                height: table_height,
+                pageSize: 25,
+                pageList: [25,50,100],
+                
+                formatShowingRows: function(pageFrom, pageTo, totalRows){
+                    //do nothing here, we don't want to show the text "showing x of y from..." 
+                },
+                formatRecordsPerPage: function(pageNumber){
+                    return pageNumber + " rows visible";
+                },
+                icons: {
+                    refresh: 'fa fa-refresh',
+                    toggle: 'fa fa-th-list',
+                    columns: 'fa fa-columns',
+                    detailOpen: 'fa fa-plus-circle',
+                    detailClose: 'fa fa-minus-circle'
+                }
+            });
+            
+            window.operateEvents = {
+                'click .like': function (e, value, row, index) {
+                    alert('You click like icon, row: ' + JSON.stringify(row));
+                    console.log(value, row, index);
+                },
+                'click .edit': function (e, value, row, index) {
+                    alert('You click edit icon, row: ' + JSON.stringify(row));
+                    console.log(value, row, index);    
+                },
+                'click .remove': function (e, value, row, index) {
+                    $table.bootstrapTable('remove', {
+                        field: 'id',
+                        values: [row.id]
+                    });
+            
+                }
+            };
+            
+            $alertBtn.click(function () {
+                alert("You pressed on Alert");
+            });
+        
+            
+            $(window).resize(function () {
+                $table.bootstrapTable('resetView');
+            });    
+        });
+        
+
+        function operateFormatter(value, row, index) {
+            return [
+                '<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
+                    '<i class="fa fa-heart"></i>',
+                '</a>',
+                '<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
+                    '<i class="fa fa-edit"></i>',
+                '</a>',
+                '<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
+                    '<i class="fa fa-remove"></i>',
+                '</a>'
+            ].join('');
+        }
+       
+    </script>
+
+</html>

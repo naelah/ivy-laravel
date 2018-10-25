@@ -7,3 +7,7 @@
 @section('content')
   @include('admin_pages.users.user_table')
 @stop
+
+@section('extra_scripts')
+  @include('admin_pages.users.user_scripts')
+@stop
