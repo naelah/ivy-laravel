@@ -3,7 +3,3 @@
 @section('content')
   @include('admin_pages.salons.salon_nav')
 @stop
-
-@section('extra_scripts')
-  @include('includes.table_script')
-@stop

@@ -1,3 +1,4 @@
+@include('admin_pages.staffs.staff_search')
 <div class="table-responsive">
       <table class="table align-items-center">
         <thead class="thead-light">
