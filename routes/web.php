@@ -36,6 +36,14 @@ Route::get('admin/user', function () {
     return view('admin_pages.users');
 });
 
+Route::get('admin/menu', function () {
+    return view('admin_pages.menus');
+});
+
+Route::get('admin/login', function () {
+    return view('admin_pages.login');
+});
+
 Route::get('test', function () {
     return view('test');
 });

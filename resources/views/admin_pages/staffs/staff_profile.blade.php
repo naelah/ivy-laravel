@@ -10,8 +10,8 @@
   </div>
   <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
     <div class="d-flex justify-content-between">
-      <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
-      <a href="#" class="btn btn-sm btn-default float-right">Message</a>
+      <a href="#" class="btn btn-sm btn-info mr-4">Favorite</a>
+      <a href="#" class="btn btn-sm btn-default float-right">Reserve</a>
     </div>
   </div>
   <div class="card-body pt-0 pt-md-4">
@@ -20,35 +20,31 @@
         <div class="card-profile-stats d-flex justify-content-center mt-md-5">
           <div>
             <span class="heading">22</span>
-            <span class="description">Friends</span>
+            <span class="description">Favorites</span>
           </div>
           <div>
             <span class="heading">10</span>
-            <span class="description">Photos</span>
+            <span class="description">Portfolio</span>
           </div>
           <div>
             <span class="heading">89</span>
-            <span class="description">Comments</span>
+            <span class="description">Reservations</span>
           </div>
         </div>
       </div>
     </div>
     <div class="text-center">
       <h3>
-        Jessica Jones<span class="font-weight-light">, 27</span>
-      </h3>
-      <div class="h5 font-weight-300">
-        <i class="ni location_pin mr-2"></i>Bucharest, Romania
+        Staff Name
+      <div class="h5 mt-4 font-weight-300"> Stylist, <i class="ni location_pin mr-2"></i>Salon Name
       </div>
+      
       <div class="h5 mt-4">
-        <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
-      </div>
-      <div>
-        <i class="ni education_hat mr-2"></i>University of Computer Science
+        <span class="badge badge-pill badge-success">Monday - Thursday 10:00 ~ 16:00</span> <span class="badge badge-pill badge-success">Friday 10:00 ~ 12:00</span>
       </div>
       <hr class="my-4" />
-      <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
-      <a href="#">Show more</a>
+      <p>Description - hair stylist specializing in layering etc</p>
+      <a href="#">Portfolio</a>
     </div>
   </div>
 </div>
