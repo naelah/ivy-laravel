@@ -13,13 +13,12 @@
           <input class="form-control" placeholder="Search" type="text">
         </div>
       </div>
-      
-      </div>
+    </div>
     <div class="col-3 text-right">
       <a href="#!" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#menuNew">New Menu</a>
     </div>
   </div>
-  </div>
+</div>
   <div class="card-body">
     <div class="table-responsive">
       <table class="table align-items-center">

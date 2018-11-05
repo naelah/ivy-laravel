@@ -99,6 +99,11 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="./service">
+            <i class="ni ni-briefcase-24 text-warning"></i> Service
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="./staff">
             <i class="ni ni-single-02 text-yellow"></i> Staff
           </a>

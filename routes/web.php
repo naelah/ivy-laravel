@@ -40,6 +40,10 @@ Route::get('admin/menu', function () {
     return view('admin_pages.menus');
 });
 
+Route::get('admin/service', function () {
+    return view('admin_pages.service');
+});
+
 Route::get('admin/login', function () {
     return view('admin_pages.login');
 });
