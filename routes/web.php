@@ -44,6 +44,14 @@ Route::get('admin/login', function () {
     return view('admin_pages.login');
 });
 
+Route::get('staff/login', function () {
+    return view('staff_pages.login');
+});
+
+Route::get('staff/forgotpassword', function () {
+    return view('staff_pages.forgot');
+});
+
 Route::get('test', function () {
     return view('test');
 });
