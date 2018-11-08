@@ -19,11 +19,16 @@
     </td>
     <td>
       <div class="avatar-group">
-        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+        <a href="#" class="avatar avatar-sm" data-toggle="modal" data-target="#reservationCard">
           <img alt="Image placeholder" src="/img/theme/team-4-800x800.jpg" class="rounded-circle">
         </a> 
       </div>
-      User User User
+      <span class="badge badge-primary">username1324</span>
+      <div class="media align-items-center">
+        <div class="media-body">
+          <span class="mb-0 text-sm">Stylist Name</span>
+        </div>
+      </div>
     </td>
     <th scope="row">
       <div class="media align-items-center">

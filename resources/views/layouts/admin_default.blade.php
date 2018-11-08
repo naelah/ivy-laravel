@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        </div>
+       </div>
      
       <!-- Footer -->
       @include('includes.footer')

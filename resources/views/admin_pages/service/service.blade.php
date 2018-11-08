@@ -8,25 +8,19 @@
     </li>
   </ul>
 </div>
-<div class="card shadow">
-  <div class="card-body">
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="menu" role="tabpanel" aria-labelledby="menu-tab">
-        <div class="card-body">
-          <div class="table-responsive">
-    
-            @include('admin_pages.menus.menu_search')
-            @include('admin_pages.menus.menu_table')
-            @include('admin_pages.menus.menu_modal')
-
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="promo" role="tabpanel" aria-labelledby="promo-tab">
-        @include('admin_pages.promotions.promotion_search')
-        @include('admin_pages.promotions.promotion_table')
-        @include('admin_pages.promotions.promotion_modal')
-      </div>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+    <div class="table-responsive">
+      @include('admin_pages.menus.menu_search')
+      @include('admin_pages.menus.menu_table')
+      @include('admin_pages.menus.menu_modal')
+    </div>
+  </div>
+  <div class="tab-pane fade" id="promo" role="tabpanel" aria-labelledby="promo-tab">
+    <div class="table-responsive">
+      @include('admin_pages.promotions.promotion_search')
+      @include('admin_pages.promotions.promotion_table')
+      @include('admin_pages.promotions.promotion_modal')
     </div>
   </div>
 </div>
