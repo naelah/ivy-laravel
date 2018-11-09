@@ -60,6 +60,10 @@ Route::get('test', function () {
     return view('test');
 });
 
+Route::get('admin/invoice/test', function () {
+    return view('admin_pages.invoices.invoice_pdf');
+});
+
 Route::get('admin/table', function () {
     return view('admin_pages.table');
 });

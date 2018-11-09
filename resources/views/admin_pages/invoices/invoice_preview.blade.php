@@ -1,6 +1,3 @@
-@extends('layouts.default')
- 
-@section('content')
 <div class="main-panel">          
   <div class="content-wrapper">
     <div class="row">
@@ -78,10 +75,10 @@
                       <h4 class="text-right mb-5">Total : $13,986</h4>
                       <hr>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
   </div>
 </div>
-@stop
