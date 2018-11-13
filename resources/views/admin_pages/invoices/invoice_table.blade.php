@@ -6,6 +6,7 @@
         <th scope="col">No</th>
         <th scope="col">Salon</th>
         <th scope="col">Invoice Number</th>
+        <th scope="col">Total</th>
         <th scope="col"></th>
         <th scope="col">Status</th>
       </tr>
@@ -13,51 +14,41 @@
     <tbody>
       <tr>
         <td> 1  </td>
-        <td><div class="avatar-group">
-              <a href="#" class="avatar avatar-sm" data-toggle="modal" data-target="#userProfile">
-                <img alt="Image placeholder" src="/img/theme/team-3-800x800.jpg" class="rounded-circle">
-              </a>
-            </div> 
-            <span class="badge badge-primary">username1324</span>
+        <td><span class="badge badge-primary">#salon_id</span>
             <div class="media align-items-center">
             <div class="media-body">
-              <span class="mb-0 text-sm">User Name</span>
+              <span class="mb-0 text-sm">Salon name</span>
             </div>
           </div>
         </td>
-        <td> <span class="badge badge-warning">#2320184092 </span><br><span style="margin-top: 10px" class="badge badge-pill badge-default">1 Nov 2018</span></td>
+        <td> <button type="button" class="btn btn-warning active btn-sm"  data-toggle="modal" data-target="#invoicePreview" aria-pressed="true">#SS184324324</button><br><span style="margin-top: 10px" class="badge badge-pill badge-warning">1 Nov 2018</span></td>
+        <td>MMK 4324</td>
         <td> 
         <button type="button" data-toggle="modal" data-target="#invoicePreview" class="btn btn-primary btn-sm">Preview Invoice</button> <br>
-        <button type="button" class="btn btn-outline-primary btn-sm">Download Invoice</button> 
+        <button type="button"   style="margin-top: 10px" class="btn btn-outline-primary btn-sm">Download Invoice</button> 
         </td>
-        <td>jihujuh@gmail.com</td>
         <td><span class=" badge badge-success">paid</span></td>   
       </tr>
       <tr>
         <td> 1  </td>
-        <td><div class="avatar-group">
-              <a href="#" class="avatar avatar-sm" data-toggle="modal" data-target="#staffProfile">
-                <img alt="Image placeholder" src="/img/theme/team-1-800x800.jpg" class="rounded-circle">
-              </a>
-            </div> 
-            <span class="badge badge-primary">alia4</span>
+        <td><span class="badge badge-primary">alia4</span>
             <div class="media align-items-center">
             <div class="media-body">
-              <span class="mb-0 text-sm">paid</span>
+              <span class="mb-0 text-sm">salon</span>
             </div>
           </div>
         </td>
-        <td> <span class="badge badge-warning">#2320184092 </span><br><span style="margin-top: 10px" class="badge badge-pill badge-default">1 Nov 2018</span></td>        <td> <button type="button" class="btn btn-outline-primary btn-sm">12 November 2018<br> Tokyo Spa Salon</button> <br></td>
-        <td>jihujuh@gmail.com</td>
+        <td> <button type="button" class="btn btn-warning active btn-sm"  data-toggle="modal" data-target="#invoicePreview" aria-pressed="true">#SS184324324</button><br><span style="margin-top: 10px" class="badge badge-pill badge-warning">1 Nov 2018</span></td>
+        <td> MMK10,453 </td>
+        <td> 
+        <button type="button" data-toggle="modal" data-target="#invoicePreview" class="btn btn-primary btn-sm">Preview Invoice</button> <br>
+        <button type="button"  style="margin-top: 10px"  class="btn btn-outline-primary btn-sm">Download Invoice</button> 
+        </td>
         <td><span class=" badge badge-danger">unpaid</span></td>   
       </tr>
       <tr>
-        <td> 1  </td>
-        <td><div class="avatar-group">
-              <a href="#" class="avatar avatar-sm" data-toggle="modal" data-target="#staffProfile">
-                <img alt="Image placeholder" src="/img/theme/team-2-800x800.jpg" class="rounded-circle">
-              </a>
-            </div> 
+        <td> 3  </td>
+        <td>
             <span class="badge badge-primary">username1654</span>
             <div class="media align-items-center">
             <div class="media-body">
@@ -65,17 +56,17 @@
             </div>
           </div>
         </td>
-        <td> <span class="badge badge-warning">#2320184092 </span><br><span style="margin-top: 10px" class="badge badge-pill badge-default">1 Nov 2018</span></td>        <td> <button type="button" class="btn btn-outline-primary btn-sm">12 November 2018<br> Tokyo Spa Salon</button> </td>
-        <td>jihujuh@gmail.com</td>
+        <td> <button type="button" class="btn btn-warning active btn-sm"  data-toggle="modal" data-target="#invoicePreview" aria-pressed="true">#SS184324324</button><br><span style="margin-top: 10px" class="badge badge-pill badge-warning">1 Nov 2018</span></td>
+        <td> MMK 654 </td>
+        <td> 
+        <button type="button" data-toggle="modal" data-target="#invoicePreview" class="btn btn-primary btn-sm">Preview Invoice</button> <br>
+        <button type="button" style="margin-top: 10px" class="btn btn-outline-primary btn-sm">Download Invoice</button> 
+        </td>
         <td><span class=" badge badge-success">unpaid</span></td>   
       </tr>
       <tr>
-        <td> 1  </td>
-        <td><div class="avatar-group">
-              <a href="#" class="avatar avatar-sm" data-toggle="modal" data-target="#staffProfile">
-                <img alt="Image placeholder" src="/img/theme/team-4-800x800.jpg" class="rounded-circle">
-              </a>
-            </div> 
+        <td> 4  </td>
+        <td>
             <span class="badge badge-primary">username1324</span>
             <div class="media align-items-center">
             <div class="media-body">
@@ -83,9 +74,13 @@
             </div>
           </div>
         </td>
-        <td> <span class="badge badge-warning">#2320184092 </span><br><span style="margin-top: 10px" class="badge badge-pill badge-default">1 Nov 2018</span></td>        <td> <button type="button" class="btn btn-outline-primary btn-sm">12 November 2018<br> Tokyo Spa Salon</button> </td>
-        <td>jihujuh@gmail.com</td>
-        <td><span class=" badge badge-danger">inactive</span></td>   
+        <td> <button type="button" class="btn btn-warning active btn-sm"  data-toggle="modal" data-target="#invoicePreview" aria-pressed="true">#SS184324324</button><br><span style="margin-top: 10px" class="badge badge-pill badge-warning">1 Nov 2018</span></td>
+        <td> MMK 4535 </td>
+        <td> 
+        <button type="button" data-toggle="modal" data-target="#invoicePreview" class="btn btn-primary btn-sm">Preview Invoice</button> <br>
+        <button type="button" style="margin-top: 10px" class="btn btn-outline-primary btn-sm">Download Invoice</button> 
+        </td>
+        <td><span class=" badge badge-danger">unpaid</span></td>   
       </tr>
     </tbody>
   </table>
